@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Will You Be My Girlfriend?</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-animation.min.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+</head>
+<body class="loading">
+    <!-- Background Music -->
+    <audio id="bg-music" src="assets/audio/1.mp3" loop></audio>
+    <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function () {
+      document.getElementById("bg-music").play();
+    }, { once: true });
+  });
+</script>
+
+
+    <audio src="assets/audio/1.mp3" controls autoplay loop></audio>
+
+    <audio src="assets\audio\1.mp3" autoplay loop></audio>
+
+    <div id="wrapper">
+        <div id="bg"></div>
+        <div id="overlay"></div>
+        <div id="main">
+            <header id="header">
+                <h1>Dasha, will you be my girlfriend?</h1>
+                <p>"You're the reason I believe in love again."</p>
+                <p>"Please say yes and let's write our story together."</p>
+                <nav>
+                    <ul>
+                        <li><a href="login.html" class="icon fa-heart faa-pulse animated"><span class="label">Yes</span></a></li>
+                        <li><a href="#" class="icon fa-times-circle"><span class="label">No</span></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <footer id="footer">
+                <span class="icon fa-volume-up"><span class="label">Music</span></span>
+            </footer>
+        </div>
+    </div>
+    <script>
+        window.onload = function() { document.body.className = ''; }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+</body>
+</html>

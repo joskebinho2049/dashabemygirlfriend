@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log in to Love</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="login/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="login/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="login/js/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="login/css/sweetalert.css" />
+</head>
+<body>
+    <!-- Background Music -->
+    <audio id="bg-music" src="assets/audio/1.mp3" loop></audio>
+    <script>
+  window.addEventListener("DOMContentLoaded", function () {
+    document.body.addEventListener("click", function () {
+      document.getElementById("bg-music").play();
+    }, { once: true });
+  });
+</script>
+
+
+    <audio src="assets/audio/1.mp3" controls autoplay loop></audio>
+
+    <audio src="assets\audio\1.mp3" autoplay loop></audio>
+    <div class="login-form">
+        <div class="head-info">
+            <label class="lbl-1"></label>
+            <label class="lbl-2"></label>
+            <label class="lbl-3"></label>
+        </div>
+        <div class="avtar"><img src="https://github.com/joskebinho2049/dashabemygirlfriend/blob/main/photo_2025-04-15_11-25-07-modified%20(2).png?raw=true" /></div>
+        <form>
+            <input type="text" class="text" id="username" value="Name" onfocus="this.value='';" />
+            <div class="key"><input type="password" id="password" value="Password" onfocus="this.value='';" /></div>
+            <div class="signin"><input type="button" value="I accept! ❤️" onclick="validate()" /></div>
+        </form>
+    </div>
+
+    <script>
+    function validate() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        if (user.toLowerCase() === "dasha" && pass === "ilovehim") {
+            window.location.href = "final.html";
+        } else {
+            swal("Oops!", "Wrong username or password. Try again!", "error");
+        }
+    }
+    </script>
+</body>
+</html>
